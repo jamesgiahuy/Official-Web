@@ -29,6 +29,9 @@ html {
 }
 
 .col-third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 33.33333%;
 }
 
@@ -111,7 +114,10 @@ html {
   padding: 0 21px;
 }
 
-#header .mobile-menu-button,
+#header .mobile-menu-button:hover {
+  cursor: pointer;
+  background-color: firebrick;
+}
 #header .search-btn:hover {
   background-color: firebrick;
   cursor: pointer;
@@ -195,6 +201,7 @@ html {
   margin: 15px;
   text-transform: none;
   font-weight: 550;
+  width: 33%;
 }
 .test {
   overflow: hidden;
@@ -204,6 +211,8 @@ html {
   border-radius: 5px;
   object-fit: cover;
   transition: all 0.8s;
+  height: 100%;
+  display: block;
 }
 #content .img-member:hover {
   transform: scale(1.1);
@@ -478,4 +487,5 @@ html {
 }
 .test {
   width: 154px;
+  height: 158px;
 }
