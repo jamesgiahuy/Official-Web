@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
 
@@ -196,10 +196,17 @@ html {
   text-transform: none;
   font-weight: 550;
 }
-
+.test {
+  overflow: hidden;
+}
 #content .img-member {
   width: 154px;
   border-radius: 5px;
+  object-fit: cover;
+  transition: all 0.8s;
+}
+#content .img-member:hover {
+  transform: scale(1.1);
 }
 
 .tour-section {
@@ -468,4 +475,7 @@ html {
   background-color: #ccc;
   color: #000;
   cursor: pointer;
+}
+.test {
+  width: 154px;
 }
